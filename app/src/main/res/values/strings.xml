@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">androidProject</string>
+    <string name="todo">Arms and Abs</string>
+    <string name="arms_abs"><![CDATA[Arms & Abs]]></string>
+    <string name="start_position"><b>1. Start Position.</b> Place both hands on the yoga mat
+        shoulder-with apart and both feet together behind you.</string>
+    <string name="inhale"><b>2. Inhale.</b> While maintaining a neutral spine, behind your elbows
+        and lower your torso to the mat.</string>
+    <string name="exhale"><b>3. Exhale.</b> Push through your chest andextend your elbows to lift
+        your body back into the starting position.</string>
+    <string name="button">Start</string>
 </resources>
