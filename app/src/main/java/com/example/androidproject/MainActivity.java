@@ -8,13 +8,11 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnStart;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnStart = findViewById(R.id.btnFirstAct);
+        Button btnStart = findViewById(R.id.btnFirstAct);
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -24,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void moveToSecondActivity() {
-        Intent intent = new Intent(MainActivity.this, SecondActivity.class );
+        Intent intent = new Intent(MainActivity.this, CameraActivity.class );
         startActivity(intent);
     }
 }

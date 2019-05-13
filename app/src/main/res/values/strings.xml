@@ -9,4 +9,10 @@
     <string name="exhale"><b>3. Exhale.</b> Push through your chest andextend your elbows to lift
         your body back into the starting position.</string>
     <string name="button">Start</string>
+
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
+    <string name="description_info">Info</string>
+    <string name="permission_request">This sample needs permission for camera and audio recording.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
 </resources>
