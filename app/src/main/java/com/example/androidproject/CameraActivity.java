@@ -32,5 +32,4 @@ public class CameraActivity extends FragmentActivity {
                     .commit();
         }
     }
-
 }

@@ -24,6 +24,7 @@ import android.app.DialogFragment;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.graphics.Matrix;
@@ -205,13 +206,20 @@ public class Camera2VideoFragment extends Fragment
 
         @Override
         public void onError(@NonNull CameraDevice cameraDevice, int error) {
-            mCameraOpenCloseLock.release();
+            /*mCameraOpenCloseLock.release();
             cameraDevice.close();
             mCameraDevice = null;
             Activity activity = getActivity();
             if (null != activity) {
                 activity.finish();
-            }
+            }*/
+
+            //Reopen camera at error instead cole activity
+            /*closeCamera();
+            openCamera(mTextureView.getWidth(), mTextureView.getHeight());*/
+
+            Intent intent = new Intent(Camera2VideoFragment.this.getActivity(), PlayActivity.class );
+            startActivity(intent);
         }
 
     };
@@ -678,6 +686,7 @@ public class Camera2VideoFragment extends Fragment
         // UI
         mIsRecordingVideo = false;
         mButtonVideo.setText(R.string.record);
+
         // Stop recording
         mMediaRecorder.stop();
         mMediaRecorder.reset();
